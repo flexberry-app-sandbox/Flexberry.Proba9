@@ -29,6 +29,7 @@ namespace IIS.Proba9
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧПланирСобесE", new string[] {
+            "ТЧРегистАнкеты",
             "ТЧРегистАнкеты.ИНН",
             "ТЧРегистАнкеты.НомерТелефона",
             "ТЧРегистАнкеты.СерНомПаспорта",

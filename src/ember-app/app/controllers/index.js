@@ -22,25 +22,25 @@ export default Controller.extend({
             link: 'i-i-s-proba9-организация-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-организация-l.title'),
-            icon: 'edit',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-proba9-должности-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-должности-l.title'),
-            icon: 'list',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-proba9-регист-анкеты-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-регист-анкеты-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-регист-анкеты-l.title'),
-            icon: 'briefcase',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-proba9-планир-собес-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-планир-собес-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-планир-собес-l.title'),
-            icon: 'calendar',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-proba9-сотрудники-l',
@@ -52,7 +52,7 @@ export default Controller.extend({
             link: 'i-i-s-proba9-рег-результ-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-рег-результ-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-рег-результ-l.title'),
-            icon: 'book',
+            icon: 'folder open',
             children: null
           }]
         }

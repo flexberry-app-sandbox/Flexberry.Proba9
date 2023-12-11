@@ -238,7 +238,6 @@ namespace IIS.Proba9
         public virtual void Отправить()
         {
             // *** Start programmer edit section *** (ПланирСобес.Отправить method implementation)
-
             return;
             // *** End programmer edit section *** (ПланирСобес.Отправить method implementation)
         }

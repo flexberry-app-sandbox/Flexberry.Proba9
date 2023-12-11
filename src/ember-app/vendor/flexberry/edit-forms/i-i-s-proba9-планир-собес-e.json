@@ -15,6 +15,14 @@
       "relationName": "РегистАнкеты",
       "projection": "РегистАнкетыL",
       "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТЧПланирСобес.ТЧРегистАнкеты",
+      "projection": "",
+      "detailModelName": null
     }
   ],
   "external": false,

@@ -45,7 +45,7 @@
                   "name": "должности",
                   "caption": "",
                   "hidden": false,
-                  "index": 6
+                  "index": 7
                 }
               ],
               "index": -1,
@@ -62,40 +62,40 @@
               "name": "иНН",
               "caption": "",
               "hidden": false,
-              "index": 0
+              "index": 1
             },
             {
               "name": "номерТелефона",
               "caption": "",
               "hidden": false,
-              "index": 1
+              "index": 2
             },
             {
               "name": "серНомПаспорта",
               "caption": "",
               "hidden": false,
-              "index": 2
+              "index": 3
             },
             {
               "name": "снилс",
               "caption": "",
               "hidden": false,
-              "index": 3
+              "index": 4
             },
             {
               "name": "фИОКандидата",
               "caption": "",
               "hidden": false,
-              "index": 4
+              "index": 5
             },
             {
               "name": "элПочта",
               "caption": "",
               "hidden": false,
-              "index": 5
+              "index": 6
             }
           ],
-          "index": -1,
+          "index": 0,
           "type": "default",
           "caption": "",
           "name": "тЧРегистАнкеты",
