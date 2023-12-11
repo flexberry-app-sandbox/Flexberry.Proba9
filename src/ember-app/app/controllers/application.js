@@ -28,37 +28,37 @@ export default Controller.extend({
             link: 'i-i-s-proba9-организация-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-организация-l.title'),
-            icon: 'tasks',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-proba9-должности-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-должности-l.title'),
-            icon: 'tasks',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-proba9-регист-анкеты-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-регист-анкеты-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-регист-анкеты-l.title'),
-            icon: 'table',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-proba9-планир-собес-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-планир-собес-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-планир-собес-l.title'),
-            icon: 'tags',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-proba9-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-сотрудники-l.title'),
-            icon: 'chart line',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-proba9-рег-результ-l',
             caption: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-рег-результ-l.caption'),
             title: i18n.t('forms.application.sitemap.proba9.i-i-s-proba9-рег-результ-l.title'),
-            icon: 'folder open',
+            icon: 'tasks',
             children: null
           }]
         }

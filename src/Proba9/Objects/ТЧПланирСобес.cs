@@ -37,6 +37,13 @@ namespace IIS.Proba9
             "ТЧРегистАнкеты.ФИОКандидата",
             "ТЧРегистАнкеты.ЭлПочта",
             "ТЧРегистАнкеты.Должности.Должности"})]
+    [View("ТЧПланирСобесL", new string[] {
+            "ТЧРегистАнкеты.ИНН",
+            "ТЧРегистАнкеты.НомерТелефона",
+            "ТЧРегистАнкеты.СерНомПаспорта",
+            "ТЧРегистАнкеты.Снилс",
+            "ТЧРегистАнкеты.ФИОКандидата",
+            "ТЧРегистАнкеты.ЭлПочта"})]
     public class ТЧПланирСобес : ICSSoft.STORMNET.DataObject
     {
         
@@ -132,6 +139,17 @@ namespace IIS.Proba9
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("ТЧПланирСобесE", typeof(IIS.Proba9.ТЧПланирСобес));
+                }
+            }
+            
+            /// <summary>
+            /// "ТЧПланирСобесL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ТЧПланирСобесL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ТЧПланирСобесL", typeof(IIS.Proba9.ТЧПланирСобес));
                 }
             }
         }

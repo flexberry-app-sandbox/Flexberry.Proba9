@@ -40,4 +40,15 @@ export let defineProjections = function (modelClass) {
       }, { index: -1, hidden: true })
     }, { index: 0 })
   });
+
+  modelClass.defineProjection('ТЧПланирСобесL', 'i-i-s-proba9-т-ч-планир-собес', {
+    тЧРегистАнкеты: belongsTo('i-i-s-proba9-т-ч-регист-анкеты', '', {
+      иНН: attr('', { index: 0 }),
+      номерТелефона: attr('', { index: 1 }),
+      серНомПаспорта: attr('', { index: 2 }),
+      снилс: attr('', { index: 3 }),
+      фИОКандидата: attr('', { index: 4 }),
+      элПочта: attr('', { index: 5 })
+    }, { index: -1, hidden: true })
+  });
 };
