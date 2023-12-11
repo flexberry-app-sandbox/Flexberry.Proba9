@@ -1,0 +1,112 @@
+﻿{
+  "name": "IISProba9ТЧПланирСобес",
+  "modelName": "i-i-s-proba9-т-ч-планир-собес",
+  "className": "ТЧПланирСобес",
+  "nameSpace": "IIS.Proba9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧРегистАнкеты",
+      "relatedTo": "i-i-s-proba9-т-ч-регист-анкеты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планирСобес",
+      "relatedTo": "i-i-s-proba9-планир-собес",
+      "inverse": "тЧПланирСобес"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПланирСобесE",
+      "modelName": "i-i-s-proba9-т-ч-планир-собес",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧРегистАнкеты",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ТЧРегистАнкеты.Должности",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "должности",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 6
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "должности",
+              "relatedTo": "i-i-s-proba9-должности",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "иНН",
+              "caption": "",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "номерТелефона",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "серНомПаспорта",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "снилс",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "фИОКандидата",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "элПочта",
+              "caption": "",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "тЧРегистАнкеты",
+          "relatedTo": "i-i-s-proba9-т-ч-регист-анкеты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

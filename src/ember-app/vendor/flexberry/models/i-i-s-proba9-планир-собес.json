@@ -1,0 +1,190 @@
+﻿{
+  "name": "IISProba9ПланирСобес",
+  "modelName": "i-i-s-proba9-планир-собес",
+  "className": "ПланирСобес",
+  "nameSpace": "IIS.Proba9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПланСобес",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иметьПриСебе",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-proba9-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "регистАнкеты",
+      "relatedTo": "i-i-s-proba9-регист-анкеты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧПланирСобес",
+      "relatedTo": "i-i-s-proba9-т-ч-планир-собес",
+      "inverse": "планирСобес"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПланирСобесE",
+      "modelName": "i-i-s-proba9-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba9-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ДатаРегистр",
+          "lookupValueField": "датаРегистр",
+          "relationName": "РегистАнкеты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаРегистр",
+              "caption": "Дата регистр",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Регист анкеты",
+          "name": "регистАнкеты",
+          "relatedTo": "i-i-s-proba9-регист-анкеты",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧПланирСобесE",
+          "caption": "",
+          "name": "тЧПланирСобес",
+          "relatedTo": "i-i-s-proba9-т-ч-планир-собес",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПланирСобесL",
+      "modelName": "i-i-s-proba9-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba9-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РегистАнкеты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаРегистр",
+              "caption": "Дата регистр",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата регистр",
+          "name": "регистАнкеты",
+          "relatedTo": "i-i-s-proba9-регист-анкеты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

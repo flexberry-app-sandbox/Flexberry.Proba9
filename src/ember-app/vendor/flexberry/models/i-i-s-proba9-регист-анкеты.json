@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISProba9РегистАнкеты",
+  "modelName": "i-i-s-proba9-регист-анкеты",
+  "className": "РегистАнкеты",
+  "nameSpace": "IIS.Proba9",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаРегистр",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-proba9-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧРегистАнкеты",
+      "relatedTo": "i-i-s-proba9-т-ч-регист-анкеты",
+      "inverse": "регистАнкеты"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РегистАнкетыE",
+      "modelName": "i-i-s-proba9-регист-анкеты",
+      "attrs": [
+        {
+          "name": "датаРегистр",
+          "caption": "Дата регистр",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba9-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧРегистАнкетыE",
+          "caption": "Т ч регист анкеты",
+          "name": "тЧРегистАнкеты",
+          "relatedTo": "i-i-s-proba9-т-ч-регист-анкеты",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РегистАнкетыL",
+      "modelName": "i-i-s-proba9-регист-анкеты",
+      "attrs": [
+        {
+          "name": "датаРегистр",
+          "caption": "Дата регистр",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba9-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
