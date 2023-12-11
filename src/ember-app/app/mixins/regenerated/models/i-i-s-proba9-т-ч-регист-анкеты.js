@@ -84,4 +84,16 @@ export let defineProjections = function (modelClass) {
       должности: attr('Должности', { index: 7, hidden: true })
     }, { index: 6, displayMemberPath: 'должности' })
   });
+
+  modelClass.defineProjection('ТЧРегистАнкетыL', 'i-i-s-proba9-т-ч-регист-анкеты', {
+    иНН: attr('', { index: 0 }),
+    номерТелефона: attr('', { index: 1 }),
+    серНомПаспорта: attr('', { index: 2 }),
+    снилс: attr('', { index: 3 }),
+    фИОКандидата: attr('', { index: 4 }),
+    элПочта: attr('', { index: 5 }),
+    должности: belongsTo('i-i-s-proba9-должности', '', {
+      должности: attr('', { index: 6 })
+    }, { index: -1, hidden: true })
+  });
 };

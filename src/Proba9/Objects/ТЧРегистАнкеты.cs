@@ -40,6 +40,14 @@ namespace IIS.Proba9
             "Должности.Должности as \'Должности\'"}, Hidden=new string[] {
             "Должности.Должности"})]
     [MasterViewDefineAttribute("ТЧРегистАнкетыE", "Должности", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Должности")]
+    [View("ТЧРегистАнкетыL", new string[] {
+            "ИНН",
+            "НомерТелефона",
+            "СерНомПаспорта",
+            "Снилс",
+            "ФИОКандидата",
+            "ЭлПочта",
+            "Должности.Должности"})]
     public class ТЧРегистАнкеты : ICSSoft.STORMNET.DataObject
     {
         
@@ -335,6 +343,17 @@ namespace IIS.Proba9
                 get
                 {
                     return ICSSoft.STORMNET.Information.GetView("ТЧРегистАнкетыE", typeof(IIS.Proba9.ТЧРегистАнкеты));
+                }
+            }
+            
+            /// <summary>
+            /// "ТЧРегистАнкетыL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ТЧРегистАнкетыL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ТЧРегистАнкетыL", typeof(IIS.Proba9.ТЧРегистАнкеты));
                 }
             }
         }
